@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
- <meta charset="UTF-8">
- <title>jQueryの基礎を学ぼう_4章課題</title>
- <style>
-   .box {
-     width: 1000px;
-     height: 1000px;
-     background: red;
-   }
- </style>
-</head>
-<body>
- <div class="box"></div>
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- <script src="event.js"></script>
-</body>
-</html>
+$(function(){
+  
+  $(window).on('scroll',function(){
+      console.log('scrollイベントが発生しました');
+  });
+ });
+
+ $(window).on('load',function() {
+  console.log('loadイベントが発生しました');
+});
+
+
